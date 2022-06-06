@@ -54,7 +54,7 @@ describe('Tiendas Jumbo', () =>{
         cy.wait(2000)
         cy.xpath("(//a[@href='/electrodomesticos'][contains(.,'Electrodomésticos')])[1]").trigger("mouseover")
         cy.xpath("//a[@href='/electrodomesticos/climatización/aires-acondicionados?order=OrderByBestDiscountDESC'][contains(.,'Aires Acondicionados')]").click({force:true})
-        cy.wait(25000)
+        cy.wait(30000)
         cy.get(':nth-child(1) > .vtex-product-summary-2-x-container > .vtex-product-summary-2-x-clearLink > .vtex-product-summary-2-x-element > .vtex-flex-layout-0-x-flexCol--ppal-shelf > :nth-child(10) > .vtex-flex-layout-0-x-flexRow--btn-shelf > .vtex-flex-layout-0-x-flexRowContent--btn-shelf > [style="width: 100%;"] > .vtex-flex-layout-0-x-flexRow > .mt0 > :nth-child(2) > .vtex-flex-layout-0-x-flexRow--container-custom-btn-add > .vtex-flex-layout-0-x-flexCol > .vtex-button > .vtex-button__label > .tiendasjumboqaio-delivery-modal-3-x-buttonDataContainer').click({force:true})
         cy.get('.vtex-flex-layout-0-x-flexRow--menu-categories > .vtex-store-components-3-x-container > .mt0 > :nth-child(3) > .vtex-flex-layout-0-x-flexCol').click({force:true})
         cy.wait(2000)
